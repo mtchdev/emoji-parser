@@ -4,9 +4,13 @@ export class EmojiParser {
     
     constructor(public emojis: Emoji[]) {}
 
-    parse(string: string, callback: any): string {
-        // parse string
-        return '';
+    parse(string: string, callback: any): void {
+        if (typeof callback !== 'function') {
+            throw new Error('Callback is not a function.');
+        }
+
+        // parse string, then callback
+        callback('lol');
     }
 
     parseAync(string: string): Promise<string> {
