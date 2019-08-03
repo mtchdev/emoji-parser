@@ -20,3 +20,6 @@
  */
 
 // TODO: emoji-parser!
+
+export { EmojiParser } from './parser';
+export { Emoji } from './types';
