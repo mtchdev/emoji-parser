@@ -4,9 +4,9 @@
   "description": "This is just a simple emoji parser that I built to get more experience in writing npm packages. You can view it here: [simple-emoji-parser](https://www.npmjs.com/package/simple-emoji-parser)",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "test": "ts-node tests/index.ts"
   },
   "repository": {
     "type": "git",
