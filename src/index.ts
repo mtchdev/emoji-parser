@@ -19,7 +19,5 @@
  * simple-emoji-parser
  */
 
-import { EmojiParser } from './parser';
-
-export default EmojiParser;
+export { EmojiParser } from './parser';
 export { Emoji } from './types';
