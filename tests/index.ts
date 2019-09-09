@@ -1,4 +1,4 @@
-import { EmojiParser, Emoji } from '../src/index';
+import EmojiParser, { Emoji } from '../src/index';
 
 const emojis: Emoji[] = [
     {
