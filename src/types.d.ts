@@ -1,6 +1,6 @@
 export interface Emoji {
     name?: string,
-    id: number,
+    id?: number,
     trigger: string,
     url: string
 }
