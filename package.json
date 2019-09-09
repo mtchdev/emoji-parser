@@ -1,6 +1,6 @@
 {
   "name": "simple-emoji-parser",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This is just a simple emoji parser that I built to get more experience in writing npm packages. You can view it here: [simple-emoji-parser](https://www.npmjs.com/package/simple-emoji-parser)",
   "main": "emoji-parser/src/index.js",
   "scripts": {
