@@ -7,7 +7,7 @@
     "start:dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
     "build": "./node_modules/typescript/bin/tsc",
     "test": "ts-node tests/index.ts",
-    "install": "npm run build"
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
