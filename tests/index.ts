@@ -11,15 +11,14 @@ const emojis: Emoji[] = [
     }
 ];
 
-console.log(emojis);
-
-const parser = new EmojiParser(emojis);
-
-// Parse callback
-parser.parse('Hey there :) :) yea :) hows ur day? :D', (response: string) => {
-    console.log(response);
-});
-
 (async () => {
-    console.log(await parser.parseSync('Hey there :) yea :D'));
+    try {
+        const parser = new EmojiParser(emojis);
+        await parser.parseSync('Hey there :) yea :D');
+
+        console.log('Tests passed!');
+    } catch (e) {
+        console.log('Test failed');
+        throw new Error(e);
+    }
 })();

@@ -6,7 +6,8 @@
   "scripts": {
     "start:dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
     "build": "tsc",
-    "test": "ts-node tests/index.ts"
+    "test": "ts-node tests/index.ts",
+    "install": "tsc && npm run test"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,11 @@
   },
   "homepage": "https://github.com/spliitzx/emoji-parser#readme",
   "dependencies": {
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.3"
+    "ts-node": "^8.3.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.6.2"
   }
 }
