@@ -2,7 +2,7 @@
   "name": "emoji-parser",
   "version": "1.0.0",
   "description": "This is just a simple emoji parser that I built to get more experience in writing npm packages. You can view it here: [simple-emoji-parser](https://www.npmjs.com/package/simple-emoji-parser)",
-  "main": "src/index.js",
+  "main": "emoji-parser/src/index.js",
   "scripts": {
     "start:dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
     "build": "tsc",
